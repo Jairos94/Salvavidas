@@ -20,7 +20,7 @@
             <div class="col-6">
                 <!-- Ingreso de número de cédula -->
                 <img src="img/logo.png" class="img-thumbnail my-5" alt="...">
-                <form action="" method="post">
+                <form action="RealizarVisita.php" method="post">
 
                     <div class="input-group input-group-lg">
                         <span class="input-group-text" id="basic-addon1">
@@ -85,6 +85,9 @@
                         <button type="button" class="btn btn-success" name ="Guardar">Gestionar visita</button>
                     </div>
                 </form>
+                <?php
+                include('RealizarVisita.php');
+                ?>
             </div>
         </div>
     </div>
