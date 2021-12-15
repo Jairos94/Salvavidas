@@ -1,8 +1,3 @@
-$(document).ready(function(){
-    $('#Cedula').focus()
-
-    $('#Cedula').on('keyup',function(){
-        var cedula = ('#Cedula').val()
-        console.log(cedula)
-    })
-});
+function buscar_ahora(funcionario){
+    var parametros = {"funcionario":funcionario}
+}

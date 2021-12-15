@@ -76,6 +76,13 @@
                     ?>
                     </div>
 
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fas fa-id-card mx-3"></i>
+                            Funcionario
+                        </span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="Funcionario">
+                    </div>
 
 
 
@@ -85,9 +92,7 @@
                         <button type="button" class="btn btn-success" name ="Guardar">Gestionar visita</button>
                     </div>
                 </form>
-                <?php
-                include('RealizarVisita.php');
-                ?>
+
             </div>
         </div>
     </div>
@@ -95,7 +100,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script type="text/javascript" src="busquedacedula.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
