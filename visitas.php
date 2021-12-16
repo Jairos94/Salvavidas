@@ -20,16 +20,20 @@
             <div class="col-6">
                 <!-- Ingreso de número de cédula -->
                 <img src="img/logo.png" class="img-thumbnail my-5" alt="...">
-                <form action="RealizarVisita.php" method="post">
+                <form action="RealizarVisita.php" method="POST">
 
                     <div class="input-group input-group-lg">
                         <span class="input-group-text" id="basic-addon1">
                             <i class="fas fa-id-card mx-3"></i>
                             Cédula de identidad
                         </span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="Cedula">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="Cedula" name ="Cedula">
                         <button type="button" class="btn btn-info" name = "BuscarPersona"><i class="fas fa-search"></i></button>
                     </div>
+                    <?php
+                     if($persona != null){ ?>
+                    <h2 class="text text-info"><?php echo $persona[1] + ' ' + $persona[2] +' '+ $persona[3]; }else {?>  </h2>
+                    <?php echo "<P> No se encontraron registros</P>";} ?>
                     <!-- Dropdawn -->
                     <br>
                     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
@@ -46,7 +50,7 @@
                     <div class="input-group flex-nowrap">
 
 
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="Departamento">
                             <option selected disabled>Seleccione un departamento</option>
                             <?php
                             include('conexion.php');
