@@ -28,6 +28,7 @@
                             Cédula de identidad
                         </span>
                         <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="Cedula">
+                        <button type="button" class="btn btn-info" name = "BuscarPersona"><i class="fas fa-search"></i></button>
                     </div>
                     <!-- Dropdawn -->
                     <br>
@@ -82,6 +83,7 @@
                             Funcionario
                         </span>
                         <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="Funcionario">
+                        <button type="button" class="btn btn-info" name="buscarFuncionario"><i class="fas fa-search"></i></button>
                     </div>
 
 
